@@ -1,0 +1,342 @@
+::-webkit-scrollbar {
+    display: none
+}
+
+::placeholder {
+    color: #63ff6c
+}
+
+* {
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased
+}
+
+body {
+    color: #fff;
+    word-wrap: break-word;
+    background-color: #5a5a5a;
+    border: none;
+    padding: 0;
+    font-size: 18px;
+    width: 350px;
+    height: 580px;
+    overflow: -moz-scrollbars-none
+}
+
+body, body h1, body h2, body h3, body h4, body h5, body h6 {
+    margin: 0
+}
+
+body .text-bold-and-italic {
+    font-weight: 700;
+    font-style: italic
+}
+
+body .text-grey {
+    color: gray
+}
+
+body .text-left {
+    text-align: left
+}
+
+body .text-center {
+    text-align: center
+}
+
+body .text-right {
+    text-align: right
+}
+
+body .float-left {
+    float: left
+}
+
+body .float-right {
+    float: right
+}
+
+body .text-small {
+    font-size: .9em
+}
+
+body .bg-green {
+    background-color: limegreen;
+}
+
+body .bg-red {
+    background-color: red;
+}
+
+body .cursor-pointer {
+    cursor: pointer
+}
+
+body table {
+    width: 100%;
+    border-collapse: collapse;
+    border: none
+}
+
+body table tbody > tr td, body table tbody > tr th {
+    border: none;
+    padding: 0 10px
+}
+
+body #coin-list {
+    height: 300px;
+    overflow: scroll
+}
+
+body #coin-list table tbody > tr {
+    border-bottom: 1px solid #000000;
+    height: 50px;
+    line-height: 49px
+}
+
+body #coin-list table tbody > tr.active, body #coin-list table tbody > tr:hover {
+    background-color: #383838;
+    cursor: pointer
+}
+
+body #coin-list table tbody > tr td.currency {
+    font-weight: 700
+}
+
+body #coin-list table tbody > tr td span {
+    display: inline-block;
+    line-height: 18px;
+    padding: 7px;
+    width: 100px;
+    border-radius: 4px
+}
+
+body #coin-list table tbody > tr td span.trend {
+    margin-left: 3px
+}
+
+body #coin-list table tbody > tr td span.trend label {
+    position: relative;
+    top: -1px
+}
+
+body #coin-ctrl, body #coin-info {
+    background-color: #5a5a5a
+}
+
+body #coin-ctrl table tbody tr, body #coin-ctrl table thead tr, body #coin-info table tbody tr, body #coin-info table thead tr {
+    height: 40px;
+    line-height: 39px
+}
+
+body #coin-ctrl table tbody tr th, body #coin-ctrl table thead tr th, body #coin-info table tbody tr th, body #coin-info table thead tr th {
+    font-weight: bolder
+}
+
+body #coin-info {
+    height: 240px;
+    position: relative
+}
+
+body #coin-info table tbody tr, body #coin-info table thead tr {
+    border-bottom: 1px solid #383838
+}
+
+body #coin-info table thead > tr th {
+    text-align: center
+}
+
+body #coin-info table thead > tr th img {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    height: 20px;
+    cursor: pointer
+}
+
+body #coin-info table tbody > tr th {
+    font-size: 14.4px;
+    text-align: left
+}
+
+body #coin-info table tbody > tr td {
+    text-align: right
+}
+
+body #coin-info #coin-chart-wrapper {
+    position: fixed;
+    width: 350px;
+    top: 340px;
+    height: 200px;
+    background-color: #212121
+}
+
+body #coin-ctrl table tbody tr td > a {
+    display: block
+}
+
+body #coin-ctrl table tbody tr td img {
+    display: inline;
+    height: 14.4px;
+    cursor: pointer;
+    margin-top: 12.8px
+}
+
+body #coin-ctrl table tbody tr td.coin-ctrl-social div {
+    height: auto
+}
+
+body #coin-ctrl table tbody tr td.coin-ctrl-social div span {
+    margin: 0
+}
+
+body #coin-ctrl table tbody tr td.coin-ctrl-social div span i {
+    cursor: pointer
+}
+
+body #ctrl-page {
+    position: fixed;
+    width: 350px;
+    height: 540px;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    border: none;
+    z-index: 998;
+    background-color: #9a9a9a;
+    color: #fff;
+    overflow: scroll
+}
+
+body #ctrl-page > .ctrl-page-title {
+    position: relative;
+    height: 50px;
+    line-height: 50px
+}
+
+body #ctrl-page > .ctrl-page-title > h2 {
+    text-align: center;
+    font-size: 18px
+}
+
+body #ctrl-page > .ctrl-page-title > .close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50px;
+    cursor: pointer;
+    display: inline-block;
+    text-align: right;
+    padding-right: 10px
+}
+
+body #ctrl-page > .ctrl-page-title > .close img {
+    width: 16px;
+    height: 16px
+}
+
+body #ctrl-page > .ctrl-page-currency {
+    width: auto;
+    height: 50px;
+    text-align: left;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap
+}
+
+body #ctrl-page > .ctrl-page-currency > span {
+    display: inline-block;
+    width: 12%;
+    height: 22px;
+    line-height: 22px;
+    margin: 9px 2%;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 700;
+    cursor: pointer;
+    background-color: #505050;
+    border-radius: 10px
+}
+
+body #ctrl-page > .ctrl-page-currency > span.active {
+    background-color: #b0ffab;
+    color: #212121
+}
+
+body #ctrl-page > .ctrl-page-searchbar input[type=text] {
+    width: 100%;
+    font-size: 18px;
+    height: 35px;
+    padding: 0 10px;
+    border: none;
+    box-shadow: none;
+    outline: 0 none;
+    background-color: #5a5a5a;
+    color: #fff
+}
+
+body #ctrl-page > table.ctrl-page-list {
+    display: block;
+    height: 405px;
+    overflow: scroll
+}
+
+body #ctrl-page > table.ctrl-page-list tbody > tr td, body #ctrl-page > table.ctrl-page-list tbody > tr th {
+    height: 40px;
+    line-height: 40px;
+    cursor: pointer;
+    border-bottom: 1px solid #383838;
+    width: 350px
+}
+
+body #ctrl-page > table.ctrl-page-list tbody > tr td input[type=checkbox], body #ctrl-page > table.ctrl-page-list tbody > tr th input[type=checkbox] {
+    position: relative;
+    top: -2px
+}
+
+body #load-page {
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    border: none;
+    z-index: 999;
+    background-color: #5a5a5a;
+    color: #fff;
+    line-height: 580px;
+    text-align: center
+}
+
+
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+}
+
+.sr-only-focusable:active,
+.sr-only-focusable:focus {
+    position: static;
+    width: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    clip: auto;
+}
+
+.fa-twitter:before {
+    content: "\F099";
+}
+
+.fa-twitter-square:before {
+    content: "\F081";
+}
+
+
